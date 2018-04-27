@@ -91,7 +91,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\System.Web.WebPages.x
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\System.Web.WebPages.Deployment.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\System.Web.WebPages.Razor.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\System.Web.Optimization.xml
-C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.dll

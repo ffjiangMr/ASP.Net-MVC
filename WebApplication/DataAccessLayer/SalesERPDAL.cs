@@ -15,6 +15,11 @@
 
         #endregion 
 
+        public SalesERPDAL()
+        {
+
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().ToTable("TblEmployee");
