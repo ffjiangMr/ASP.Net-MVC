@@ -60,5 +60,10 @@
             }
             return View(viewListModel);
         }
+
+        public ActionResult AddNew()
+        {
+            return View("CreateEmployye");
+        }
     }
 }
