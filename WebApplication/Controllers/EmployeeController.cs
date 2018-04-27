@@ -5,6 +5,7 @@
     using System;
     using System.Text;
     using System.Web.Mvc;
+    using WebApplication.DataAccessLayer;
     using WebApplication.Models;
     using WebApplication.ViewModels;
 
@@ -64,6 +65,13 @@
         public ActionResult AddNew()
         {
             return View("CreateEmployye");
+        }
+
+        public ActionResult SaveEmployee(Employee input)
+        {
+            EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
+            empBal.SaveEmployee(input);
+            return RedirectToAction("Index");
         }
     }
 }
