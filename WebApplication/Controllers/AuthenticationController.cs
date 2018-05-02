@@ -26,16 +26,25 @@
         public ActionResult DoLogin(UserDetails u)
         {
             EmployeeBusinessLayer bal = new EmployeeBusinessLayer();
-            if (bal.IsValidUser(u))
+            UserStatus status = bal.GetUserValidity(u);
+            Boolean isAdmin = false;
+            if (status == UserStatus.AuthenticatedAdmin)
             {
-                FormsAuthentication.SetAuthCookie(u.UserName, false);
-                return RedirectToAction("Index", "Employee");
+                isAdmin = true;
+            }
+            else if (status == UserStatus.AuthenticatedUser)
+            {
+                isAdmin = false;
             }
             else
             {
                 ModelState.AddModelError("CredentialError", "Invalid username or Password");
+                Session.Remove("IsAdmin");
                 return View("Login");
             }
+            FormsAuthentication.SetAuthCookie(u.UserName, false);
+            Session["IsAdmin"] = isAdmin;
+            return RedirectToAction("Index", "Employee");
         }
 
         public ActionResult Logout()

@@ -6,6 +6,7 @@
     using System.Text;
     using System.Web.Mvc;
     using WebApplication.DataAccessLayer;
+    using WebApplication.Filters;
     using WebApplication.Models;
     using WebApplication.ViewModels;
 
@@ -41,6 +42,7 @@
         }
 
         [Authorize]
+        [HeaderFooterFilter]
         public ActionResult Index()
         {
             var employeeList = new EmployeeBusinessLayer();
@@ -60,15 +62,32 @@
                 }
                 viewListModel.Employees.Add(employeeViewModel);
             }
-            viewListModel.UserName = User.Identity.Name;
             return View(viewListModel);
         }
 
+        [AdminFilter]
+        [HeaderFooterFilter]
         public ActionResult AddNew()
         {
-            return View("CreateEmployye");
+            CreateEmployeeViewModel employeeListViewModel = new CreateEmployeeViewModel();
+            return View("CreateEmployye",employeeListViewModel); ;
         }
 
+        [AdminFilter]
+        public ActionResult GetAddNewLink()
+        {
+            if (Boolean.TryParse((String)Session["IsAdmin"], out _))
+            {
+                return PartialView("AddNewLink");
+            }
+            else
+            {
+                return new EmptyResult();
+            }
+        }
+
+        [AdminFilter]
+        [HeaderFooterFilter]
         public ActionResult SaveEmployee(Employee input)
         {
             if (ModelState.IsValid)

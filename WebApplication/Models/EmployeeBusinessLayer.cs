@@ -37,5 +37,22 @@
             }
         }
 
+        public UserStatus GetUserValidity(UserDetails u)
+        {
+            if ((u.UserName == "Admin") && (u.Password == "Admin"))
+            {
+                return UserStatus.AuthenticatedAdmin;
+            }
+            else if ((u.UserName == "Sukesh") && (u.Password == "Sukesh"))
+            {
+                return UserStatus.AuthenticatedUser;
+            }
+            else
+            {
+                return UserStatus.NonAuthenticatedUser;
+            }
+        }
+
+
     }
 }

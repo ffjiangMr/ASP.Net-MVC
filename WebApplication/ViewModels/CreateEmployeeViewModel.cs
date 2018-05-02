@@ -6,7 +6,7 @@
 
     #endregion
 
-    public class CreateEmployeeViewModel
+    public class CreateEmployeeViewModel:BaseViewModel
     {
         public String FirstName { get; set; }
         public String LastName { get; set; }

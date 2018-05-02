@@ -2,30 +2,22 @@
 @model EmployeeListViewModel
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/MyLayout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>MyView</title>
-</head>
-<body>
+@section TitleSection{
+    MyView
+}
+@section ContentBody{
     <div>
-        <div style="text-align:right">Hello,@Model.UserName</div>
-        <a href="/Authentication/Logout">Logout</a>
-    </div>
-        <hr />
-        <table>
+        @{
+            Html.RenderAction("GetAddNewLink");
+        }
+        <table border="1">
             <tr>
                 <th>Employee Name</th>
                 <th>Salary</th>
             </tr>
-            @*<b>
-                    Employee Details<br />
-                </b>*@
             @foreach (var employee in Model.Employees)
             {
                 <tr>
@@ -38,7 +30,5 @@
                 </tr>
             }
         </table>
-        @*<h1>Welcome to MVC 5.0 Step by Step learning.</h1>*@
     </div>
-</body>
-</html>
+}
