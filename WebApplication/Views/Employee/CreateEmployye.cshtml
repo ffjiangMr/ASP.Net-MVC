@@ -8,6 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/Validations.js"></script>
     <title>CreateEmployye</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="BtnSave" value="Save Employee" />
+                        <input type="submit" name="BtnSave" value="Save Employee" onclick="IsValid();"/>
                         <input type="reset" name="BtnReset" value="Reset" />
                     </td>
                 </tr>

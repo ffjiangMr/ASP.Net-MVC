@@ -5,7 +5,7 @@
     using DataAccessLayer;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Web.Mvc;
+    using System;
 
     #endregion
 
@@ -23,6 +23,18 @@
             salesDal.Employees.Add(input);
             salesDal.SaveChanges();
             return input;
+        }
+
+        public Boolean IsValidUser(UserDetails u)
+        {
+            if (u.UserName == "Admin" && u.Password == "Admin")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }

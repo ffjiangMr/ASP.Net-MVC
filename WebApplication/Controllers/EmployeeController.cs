@@ -40,6 +40,7 @@
             return "Hello world is old now. It's time for wassup bro";
         }
 
+        [Authorize]
         public ActionResult Index()
         {
             var employeeList = new EmployeeBusinessLayer();
@@ -59,6 +60,7 @@
                 }
                 viewListModel.Employees.Add(employeeViewModel);
             }
+            viewListModel.UserName = User.Identity.Name;
             return View(viewListModel);
         }
 

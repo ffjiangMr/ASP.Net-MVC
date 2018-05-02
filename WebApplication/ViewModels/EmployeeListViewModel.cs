@@ -10,5 +10,6 @@
     public class EmployeeListViewModel
     {
         public List<EmployeeViewModel> Employees { get; set; } = new List<EmployeeViewModel>();
+        public String UserName { get; set; }
     }
 }
