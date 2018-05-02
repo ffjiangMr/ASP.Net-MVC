@@ -70,13 +70,13 @@
         public ActionResult AddNew()
         {
             CreateEmployeeViewModel employeeListViewModel = new CreateEmployeeViewModel();
-            return View("CreateEmployye",employeeListViewModel); ;
+            return View("CreateEmployye",employeeListViewModel); 
         }
 
         [AdminFilter]
         public ActionResult GetAddNewLink()
         {
-            if (Boolean.TryParse((String)Session["IsAdmin"], out _))
+            if (Boolean.TryParse(Session["IsAdmin"].ToString()??String.Empty, out _))
             {
                 return PartialView("AddNewLink");
             }

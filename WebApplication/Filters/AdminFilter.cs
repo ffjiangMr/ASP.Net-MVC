@@ -17,7 +17,7 @@
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (!Convert.ToBoolean(filterContext.HttpContext.Session["IsAdmin"]))
+            if (!Boolean.TryParse(filterContext.HttpContext.Session["IsAdmin"] .ToString()?? String.Empty, out _))
             {
                 filterContext.Result = new ContentResult()
                 {

@@ -19,7 +19,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\Microsoft.DiaS
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\System.AppContext.dll
-C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\System.Console.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
@@ -92,4 +91,3 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.pdb
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
