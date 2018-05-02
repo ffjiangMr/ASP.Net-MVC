@@ -69,9 +69,13 @@
 
         public ActionResult SaveEmployee(Employee input)
         {
-            EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
-            empBal.SaveEmployee(input);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
+                empBal.SaveEmployee(input);
+                return RedirectToAction("Index");
+            }
+            return View("CreateEmployye");
         }
     }
 }

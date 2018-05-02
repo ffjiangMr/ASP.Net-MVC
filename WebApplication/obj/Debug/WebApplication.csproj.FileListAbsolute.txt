@@ -95,4 +95,3 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.pdb
-C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
