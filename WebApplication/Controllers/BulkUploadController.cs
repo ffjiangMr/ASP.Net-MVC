@@ -10,10 +10,11 @@
     using WebApplication.Models;
     using System.IO;
     using System;
+    using System.Threading.Tasks;
 
     #endregion
 
-    public class BulkUploadController : Controller
+    public class BulkUploadController : AsyncController
     {
         // GET: BulkUpload
         [HeaderFooterFilter]
@@ -24,9 +25,9 @@
         }
 
         [AdminFilter]
-        public ActionResult Upload(FileUploadViewModel model)
+        public async Task<ActionResult> Upload(FileUploadViewModel model)
         {
-            List<Employee> employees = this.GetEmployees(model); 
+            List<Employee> employees = await Task.Run(() => this.GetEmployees(model));
             EmployeeBusinessLayer bal = new EmployeeBusinessLayer();
             bal.UploadEmployees(employees);
             return RedirectToAction("index", "employee");
