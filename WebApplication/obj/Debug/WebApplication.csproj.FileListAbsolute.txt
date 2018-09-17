@@ -92,4 +92,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.pdb
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\Microsoft.Managed.Core.targets
 C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\nihao\source\repos\ASP.Net-MVC\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
