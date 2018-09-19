@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using LanguageFeatures.Models;
 using System.Web.Mvc;
+using System.Threading;
 
 namespace LanguageFeatures.Controllers
 {
@@ -12,6 +13,11 @@ namespace LanguageFeatures.Controllers
         // GET: Home
         public String Index()
         {
+            var result =  MyAsyncMethods.GetPageLength();
+            while (!result.IsCompleted)
+            {
+                Thread.Sleep(10);
+            }
             return "Navigate to a URL to show an example";
         }
 
@@ -45,8 +51,10 @@ namespace LanguageFeatures.Controllers
             return View("Result", (Object)stringArray[1]);
         }
 
-        public ViewResult UseExtension() {
-            ShoppingCart cart = new ShoppingCart() {
+        public ViewResult UseExtension()
+        {
+            ShoppingCart cart = new ShoppingCart()
+            {
                 Products = new List<Product>() {
                     new Product(){ Name = "Kayak",Price=275M},
                     new Product(){ Name = "Lifejacket",Price=48.95M},
@@ -55,7 +63,7 @@ namespace LanguageFeatures.Controllers
                 },
             };
             Decimal cartTotal = cart.TotalPrices();
-            return View("Result" ,(Object)$"Total:{cartTotal.ToString("c")}");
+            return View("Result", (Object)$"Total:{cartTotal.ToString("c")}");
         }
     }
 }
