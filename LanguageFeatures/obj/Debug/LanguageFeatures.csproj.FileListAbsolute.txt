@@ -24,11 +24,8 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Diagn
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Diagnostics.Process.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Diagnostics.StackTrace.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.Compression.dll
-C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.Pipes.dll
-C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Security.Claims.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -67,4 +64,7 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\obj\Debug\LanguageFeatu
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\obj\Debug\LanguageFeatures.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\obj\Debug\LanguageFeatures.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\obj\Debug\LanguageFeatures.pdb
-C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\obj\Debug\LanguageFeatures.csprojAssemblyReference.cache
+C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Reflection.Metadata.dll

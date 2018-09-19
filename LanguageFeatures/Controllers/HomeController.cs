@@ -44,5 +44,18 @@ namespace LanguageFeatures.Controllers
             };
             return View("Result", (Object)stringArray[1]);
         }
+
+        public ViewResult UseExtension() {
+            ShoppingCart cart = new ShoppingCart() {
+                Products = new List<Product>() {
+                    new Product(){ Name = "Kayak",Price=275M},
+                    new Product(){ Name = "Lifejacket",Price=48.95M},
+                    new Product(){ Name = "Soccer ball",Price=19.50M},
+                    new Product(){ Name = "Corner flag",Price=34.95M},
+                },
+            };
+            Decimal cartTotal = cart.TotalPrices();
+            return View("Result" ,(Object)$"Total:{cartTotal.ToString("c")}");
+        }
     }
 }
