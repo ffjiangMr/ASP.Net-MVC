@@ -64,7 +64,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\System.Web.Webpages.R
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\System.Web.Helpers.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\System.Web.Mvc.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\obj\Debug\EssentialTools.csprojAssemblyReference.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\obj\Debug\EssentialTools.csproj.CoreCompileInputs.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\obj\Debug\EssentialTools.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\obj\Debug\EssentialTools.dll
