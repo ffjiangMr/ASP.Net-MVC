@@ -53,3 +53,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Tests\bin\Debug\System.Threa
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Tests\bin\Debug\System.ValueTuple.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Tests\bin\Debug\SportsStore.Domain.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Tests\bin\Debug\SportsStore.Domain.pdb
+C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Tests\bin\Debug\WebActivatorEx.dll

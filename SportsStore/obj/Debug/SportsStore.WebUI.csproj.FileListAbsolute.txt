@@ -108,3 +108,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore\bin\System.Threading.Tasks.E
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore\bin\System.ValueTuple.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore\bin\SportsStore.Domain.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore\bin\SportsStore.Domain.pdb
+C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore\bin\WebActivatorEx.dll
