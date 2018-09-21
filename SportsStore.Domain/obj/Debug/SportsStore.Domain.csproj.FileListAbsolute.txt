@@ -3,7 +3,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\SportsStore
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.csproj.CoreCompileInputs.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
-C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojAssemblyReference.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\System.Web.Helpers.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\System.Web.Mvc.dll
@@ -18,3 +17,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\System.Web.
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.csproj.CopyComplete
+C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojAssemblyReference.cache
