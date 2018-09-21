@@ -68,4 +68,3 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Colle
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\nihao\source\repos\ASP.Net-MVC\LanguageFeatures\obj\Debug\LanguageFeatures.csprojAssemblyReference.cache

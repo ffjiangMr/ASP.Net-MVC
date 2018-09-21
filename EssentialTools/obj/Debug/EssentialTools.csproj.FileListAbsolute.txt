@@ -78,4 +78,3 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\Ninject.Web.Common.pd
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\Ninject.Web.Common.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\Ninject.Web.Mvc.pdb
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\bin\Ninject.Web.Mvc.xml
-C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools\obj\Debug\EssentialTools.csprojAssemblyReference.cache

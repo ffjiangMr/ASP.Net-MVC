@@ -64,7 +64,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\bin\System.Web.Webpages.Razor.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\bin\System.Web.Helpers.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\bin\System.Web.Mvc.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.csprojAssemblyReference.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.csproj.CoreCompileInputs.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.dll
