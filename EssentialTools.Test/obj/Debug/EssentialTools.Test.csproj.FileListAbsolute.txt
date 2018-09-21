@@ -33,3 +33,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\obj\Debug\EssentialT
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\obj\Debug\EssentialTools.Test.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\obj\Debug\EssentialTools.Test.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\obj\Debug\EssentialTools.Test.pdb
+C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\bin\Debug\EssentialTools.Test.dll.config
+C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\bin\Debug\Moq.dll
+C:\Users\nihao\source\repos\ASP.Net-MVC\EssentialTools.Test\bin\Debug\Moq.xml
