@@ -1,15 +1,15 @@
 ﻿using SportsStore.Domain.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using System;
+using System.Linq;
+using SportsStore.Models;
 
 namespace SportsStore.Controllers
 {
     public class ProductController : Controller
     {
         private IProductsRepository repository;
+        public Int32 pageSize = 4;
 
         public ProductController(IProductsRepository productRepository)
         {
@@ -17,9 +17,18 @@ namespace SportsStore.Controllers
         }
 
         [HttpGet]
-        public ViewResult List()
+        public ViewResult List(Int32 page = 1)
         {
-            return View(this.repository.Products);
+            ProductsListViewModel model = new ProductsListViewModel()
+            {
+                Products = this.repository.Products.OrderBy(item => item.ProductID).Skip((page - 1) * this.pageSize).Take(this.pageSize),
+                PagingInfo = new PagingInfo() {
+                    CurrentPage = page,
+                    ItemsPerpage = this.pageSize,
+                    TotalItems = this.repository.Products.Count(),
+                },
+            };
+            return View(model);
 
         }
     }
