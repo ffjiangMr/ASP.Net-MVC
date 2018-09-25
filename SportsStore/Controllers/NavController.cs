@@ -17,8 +17,9 @@ namespace SportsStore.Controllers
             this.repository = repo; 
         }
 
-        public PartialViewResult Menu()
+        public PartialViewResult Menu(String category = null)
         {
+            ViewBag.SelectedCategory = category;
             IEnumerable<String> categories = this.repository.Products.Select(item => item.Category)
                                                                      .Distinct()
                                                                      .OrderBy(item => item);
