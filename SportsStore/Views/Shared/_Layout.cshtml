@@ -22,22 +22,22 @@
     </div>
     <div class="row panel">
         <div id="category" class="col-xs-3">
-            Put something useful here later
+            @Html.Action("Menu", "Nav")
         </div>
-    </div>
-    <div class="col-xs-8">
-        @*@foreach (var item in Model.Products)
-        {
-            <div>
-                <h3>@item.Name</h3>
-                @item.Description
-                <h4>@item.Price.ToString("c")</h4>
-            </div>
-        }
-        <div>
-            @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
-        </div>*@
-        @RenderBody()
+        <div class="col-xs-8">
+            @*@foreach (var item in Model.Products)
+                {
+                    <div>
+                        <h3>@item.Name</h3>
+                        @item.Description
+                        <h4>@item.Price.ToString("c")</h4>
+                    </div>
+                }
+                <div>
+                    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
+                </div>*@
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>

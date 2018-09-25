@@ -17,16 +17,21 @@ namespace SportsStore.Controllers
         }
 
         [HttpGet]
-        public ViewResult List(Int32 page = 1)
+        public ViewResult List(String category, Int32 page = 1)
         {
             ProductsListViewModel model = new ProductsListViewModel()
             {
-                Products = this.repository.Products.OrderBy(item => item.ProductID).Skip((page - 1) * this.pageSize).Take(this.pageSize),
-                PagingInfo = new PagingInfo() {
+                Products = this.repository.Products.Where(item => String.IsNullOrEmpty(category) || (item.Category == category))
+                                                   .OrderBy(item => item.ProductID)
+                                                   .Skip((page - 1) * this.pageSize)
+                                                   .Take(this.pageSize),
+                PagingInfo = new PagingInfo()
+                {
                     CurrentPage = page,
                     ItemsPerpage = this.pageSize,
-                    TotalItems = this.repository.Products.Count(),
+                    TotalItems = this.repository.Products.Count(),                   
                 },
+                CurrentCategory = category,
             };
             return View(model);
 
