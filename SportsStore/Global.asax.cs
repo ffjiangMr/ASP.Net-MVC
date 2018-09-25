@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SportsStore.Domain.Entities;
+using SportsStore.Infrastructure.Binders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +14,7 @@ namespace SportsStore
     {
         protected void Application_Start()
         {
+            ModelBinders.Binders.Add(typeof(Cart),new CartModelBinder());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
