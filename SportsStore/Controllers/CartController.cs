@@ -1,5 +1,6 @@
 ﻿using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
+using SportsStore.Infrastructure.Binders;
 using SportsStore.Models;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace SportsStore.Controllers
             this.repository = repo;
         }
 
-        public ViewResult Index(Cart cart, String returnUrl)
+        public ViewResult Index([ModelBinder(typeof(CartModelBinder))]Cart cart, String returnUrl)
         {
             return View(new CartIndexViewModel()
             {
@@ -27,7 +28,7 @@ namespace SportsStore.Controllers
             });
         }
 
-        public RedirectToRouteResult AddToCart(Cart cart,Int32 productId, String returnUrl)
+        public RedirectToRouteResult AddToCart(Cart cart, Int32 productId, String returnUrl)
         {
             Product product = repository.Products.FirstOrDefault(item => item.ProductID == productId);
             if (product != null)
@@ -37,7 +38,7 @@ namespace SportsStore.Controllers
             return RedirectToAction("Index", "Cart", new { returnUrl });
         }
 
-        public RedirectToRouteResult RemoveFromCart(Cart cart,Int32 productId, String returnUrl)
+        public RedirectToRouteResult RemoveFromCart(Cart cart, Int32 productId, String returnUrl)
         {
             Product product = this.repository.Products.FirstOrDefault(item => item.ProductID == productId);
             if (product != null)
@@ -45,6 +46,11 @@ namespace SportsStore.Controllers
                 cart.RemoveLine(product);
             }
             return RedirectToAction("Index", "Cart", new { returnUrl });
+        }
+
+        public PartialViewResult Summary(Cart cart)
+        {
+            return PartialView(cart);
         }
 
         private Cart GetCart()
