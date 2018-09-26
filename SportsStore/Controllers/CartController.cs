@@ -64,5 +64,9 @@ namespace SportsStore.Controllers
             return cart;
         }
 
+        public ViewResult Checkout()
+        {
+            return View(new ShippingDetails());
+        }
     }
 }
