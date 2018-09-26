@@ -13,9 +13,11 @@ namespace SportsStore.Controllers
     public class CartController : Controller
     {
         private IProductsRepository repository;
+        private IOrderProcessor orderProcessor;
 
-        public CartController(IProductsRepository repo)
+        public CartController(IProductsRepository repo, IOrderProcessor proc)
         {
+            this.orderProcessor = proc;
             this.repository = repo;
         }
 
@@ -64,9 +66,31 @@ namespace SportsStore.Controllers
             return cart;
         }
 
+        [HttpGet]
         public ViewResult Checkout()
         {
             return View(new ShippingDetails());
+        }
+
+        [HttpPost]
+        public ViewResult CheckOut(Cart cart, ShippingDetails shippingDetails)
+        {
+
+            if (cart.Lines.Count() == 0)
+            {
+                ModelState.AddModelError("", "Sorry, your cart is empty");
+            }
+
+            if (ModelState.IsValid)
+            {
+                this.orderProcessor.ProcessOrder(cart, shippingDetails);
+                cart.Clear();
+                return View("Completed");
+            }
+            else
+            {
+                return View(shippingDetails);
+            }
         }
     }
 }
