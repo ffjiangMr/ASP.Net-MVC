@@ -22,3 +22,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\EntityFrame
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\EntityFramework.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nihao\source\repos\ASP.Net-MVC\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojAssemblyReference.cache
