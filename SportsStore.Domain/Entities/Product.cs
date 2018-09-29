@@ -15,7 +15,7 @@ namespace SportsStore.Domain.Entities
         public String Description { get; set; }
 
         public Decimal Price { get; set; }
-
+        
         public String Category { get; set; }
     }
-}
+}           
