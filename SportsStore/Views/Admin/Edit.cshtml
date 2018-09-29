@@ -9,7 +9,7 @@
     <div class="panel-heading">
         <h3>Edit @Model.Name</h3>
     </div>
-    @uisng(Html.BeginForm())
+    @using(Html.BeginForm())
     {
     <div class="panel-body">
         @Html.HiddenFor(m => m.ProductID)
@@ -18,7 +18,7 @@
             if (item.PropertyName != "ProductID")
             {
                 <div class="form-group">
-                    <label>@item.DisplayName ?? @item.PropertyName</label>
+                    <label>@(item.DisplayName ?? item.PropertyName)</label>
                     @if (item.PropertyName == "Description")
                     {
                         @Html.TextArea(item.PropertyName,null, new {@class = "form-control",rows=5})
@@ -39,11 +39,4 @@
     }
 </div>
 
-<h1>Edit @Model.Name</h1>
-@using (Html.BeginForm())
-{
-    @Html.EditorForModel()
-    <input type="submit" class="btn btn-success" value="Save" />
-    @Html.ActionLink("Cancel and return to List", "Index")
-}
 
