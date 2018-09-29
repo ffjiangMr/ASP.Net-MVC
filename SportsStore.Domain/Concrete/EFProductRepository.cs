@@ -1,8 +1,8 @@
 ﻿using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
+
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web.Mvc;
 
 namespace SportsStore.Domain.Concrete
 {
@@ -14,6 +14,18 @@ namespace SportsStore.Domain.Concrete
         {
             get { return this.context.Products; }
         }
+
+        public Product DeleteProduct(Int32 productId)
+        {
+            Product entity = this.context.Products.Find(productId);
+            if (entity != null)
+            {
+                this.context.Products.Remove(entity);
+                this.context.SaveChanges();
+            }
+            return entity;
+        }
+
 
         public void SaveProduct(Product prop)
         {
