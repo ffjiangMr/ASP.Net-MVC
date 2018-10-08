@@ -10,7 +10,11 @@ namespace DebuggingDemo.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Int32 firstVal = 10;
+            Int32 secondVal = 5;
+            Int32 result = firstVal / secondVal;
+            ViewBag.Message = "Welcome to asp.net mvc!";            
+            return View(result);
         }
 
         public ActionResult About()
