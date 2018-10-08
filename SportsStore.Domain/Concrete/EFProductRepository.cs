@@ -41,6 +41,9 @@ namespace SportsStore.Domain.Concrete
                     entity.Name = prop.Name;
                     entity.Category = prop.Description;
                     entity.Price = prop.Price;
+                    entity.Category = prop.Category;
+                    entity.ImageData = prop.ImageData;
+                    entity.ImageMimeType = prop.ImageMimeType;
                 }
             }
 

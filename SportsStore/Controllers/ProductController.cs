@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System;
 using System.Linq;
 using SportsStore.Models;
+using SportsStore.Domain.Entities;
 
 namespace SportsStore.Controllers
 {
@@ -29,12 +30,25 @@ namespace SportsStore.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerpage = this.pageSize,
-                    TotalItems = this.repository.Products.Where(item => String.IsNullOrEmpty(category) || (item.Category == category)).Count(),                   
+                    TotalItems = this.repository.Products.Where(item => String.IsNullOrEmpty(category) || (item.Category == category)).Count(),
                 },
                 CurrentCategory = category,
             };
             return View(model);
 
+        }
+
+        public FileContentResult GetImage(Int32 productID)
+        {
+            Product prop = this.repository.Products.FirstOrDefault(item => item.ProductID == productID);
+            if (prop != null)
+            {
+                return File(prop.ImageData, prop.ImageMimeType);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

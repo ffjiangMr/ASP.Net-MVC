@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Moq;
-using Ninject;
+﻿using Ninject;
+
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Concrete;
-using SportsStore.Domain.Entities;
-using System.Configuration;
+using SportsStore.Infrastructure.Abstract;
+using SportsStore.Infrastructure.Concrete;
+
+using System;
+using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace SportsStore.Infrastructure
 {
@@ -38,6 +37,7 @@ namespace SportsStore.Infrastructure
             this.kernel.Bind<IProductsRepository>().To<EFProductRepository>();
             EmailSettings emailSettings = new EmailSettings();          
             this.kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>().WithConstructorArgument("settings",emailSettings);
+            this.kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }
