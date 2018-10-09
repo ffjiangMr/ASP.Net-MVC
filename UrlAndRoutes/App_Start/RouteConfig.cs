@@ -7,6 +7,7 @@ namespace UrlAndRoutes
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.MapMvcAttributeRoutes();
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             Route myRoute = new Route("{controller}/{action}", new MvcRouteHandler());
             routes.MapRoute(

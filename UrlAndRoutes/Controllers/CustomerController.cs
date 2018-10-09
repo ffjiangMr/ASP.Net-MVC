@@ -5,6 +5,7 @@ namespace UrlAndRoutes.Controllers
     public class CustomerController : Controller
     {
         // GET: Customer
+        [Route("test")]
         public ActionResult Index()
         {
             ViewBag.Controller = "Customer";
