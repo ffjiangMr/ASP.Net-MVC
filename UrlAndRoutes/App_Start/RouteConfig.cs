@@ -9,14 +9,14 @@ namespace UrlAndRoutes
         {
             routes.MapMvcAttributeRoutes();
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            Route myRoute = new Route("{controller}/{action}", new MvcRouteHandler());
+            //Route myRoute = new Route("{controller}/{action}", new MvcRouteHandler());
             routes.MapRoute(
-                name: "Default",
+                name: "MyRoute",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
                 
             );
-            routes.Add("MyRoute", myRoute);
+            //routes.Add("MyRoute", weosha myRoute);
         }
     }    
 }

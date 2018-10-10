@@ -8,7 +8,7 @@ namespace UrlAndRoutes.Controllers
         public ActionResult Index()
         {
             ViewBag.Controller = "Admin";
-            ViewBag.Action = "Index";
+            ViewBag.Action = "Inmdex";
             return View("ActionName");
         }
     }
