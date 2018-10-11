@@ -1,0 +1,2 @@
+C:\Users\nihao\source\repos\ASP.Net-MVC\UrlAndRoutes.Tests\obj\Debug\UrlAndRoutes.Tests.csprojAssemblyReference.cache
+C:\Users\nihao\source\repos\ASP.Net-MVC\UrlAndRoutes.Tests\obj\Debug\UrlAndRoutes.Tests.csproj.CoreCompileInputs.cache

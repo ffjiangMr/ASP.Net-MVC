@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using System;
 
 namespace UrlAndRoutes.Controllers
 {
@@ -17,6 +18,13 @@ namespace UrlAndRoutes.Controllers
             ViewBag.Action = "CustomVariable";
             ViewBag.CustomVariable = RouteData.Values["id"];
             return View("ActionName");
+        }
+
+        public ViewResult MyActionMethod()
+        {
+            String myActionUrl = Url.Action("Index", new { id = "myID" });
+            String routeUrl = Url.RouteUrl(new { controller = "Home", action = "Index" });
+            return View();
         }
 
     }
