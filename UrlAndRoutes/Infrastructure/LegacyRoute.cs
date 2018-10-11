@@ -26,6 +26,7 @@ namespace UrlAndRoutes.Infrastructure
                 result.Values.Add("controller", "Legacy");
                 result.Values.Add("action", "GetLegacyURL");
                 result.Values.Add("legacyURL", requestedURL);
+                result.DataTokens.Add("sss", "sss");
             }
             return result;
         }
