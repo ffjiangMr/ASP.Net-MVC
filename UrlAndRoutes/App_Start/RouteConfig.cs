@@ -19,7 +19,7 @@ namespace UrlAndRoutes
             //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 
             //);
-            //routes.MapRoute("MyRoute", "{controller}/{action}");
+            routes.MapRoute("MyRoute", "{controller}/{action}", namespaces: new[] { "UrlAndRoutes.Controllers" });
             //routes.MapRoute("MyOtherRoute", "App/{controller}/{action}", new { controller = "Home" });
 
             //routes.Add("MyRoute", weosha myRoute);

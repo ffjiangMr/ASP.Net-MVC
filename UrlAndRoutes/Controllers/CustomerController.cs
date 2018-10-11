@@ -2,9 +2,10 @@
 
 namespace UrlAndRoutes.Controllers
 {
+    [RouteArea("Services")]
     public class CustomerController : Controller
     {
-        // GET: Customer
+        // GET: Customer      
         [Route("test")]
         public ActionResult Index()
         {
