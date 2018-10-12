@@ -1,5 +1,7 @@
 ﻿using ControllerAndActions.Infrastructure;
+using System;
 using System.IO;
+using System.Text;
 using System.Web.Mvc;
 
 namespace ControllerAndActions.Controllers
@@ -27,7 +29,12 @@ namespace ControllerAndActions.Controllers
 
         public FileResult FileAction()
         {
-                return File(@"d:\123","test");
+            using (StreamReader reader = new StreamReader(@"d:\123", Encoding.UTF8))
+            {
+                var temp = reader.ReadToEnd();
+                var buffer = Encoding.UTF8.GetBytes(temp);
+                return File(buffer, "text/plain; charset=utf-8");
+            }
         }
 
     }
