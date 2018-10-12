@@ -1,4 +1,5 @@
 ﻿using ControllerAndActions.Infrastructure;
+using System.IO;
 using System.Web.Mvc;
 
 namespace ControllerAndActions.Controllers
@@ -22,6 +23,11 @@ namespace ControllerAndActions.Controllers
                 Response.Write("Controller:Dervied,Action:ProduceOutput");
             }
             return null;
+        }
+
+        public FileResult FileAction()
+        {
+                return File(@"d:\123","test");
         }
 
     }
