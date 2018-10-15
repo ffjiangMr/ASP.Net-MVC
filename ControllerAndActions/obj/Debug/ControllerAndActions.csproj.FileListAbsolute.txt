@@ -84,7 +84,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\bin\Microsoft.AI.De
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\bin\Microsoft.AI.Web.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\obj\Debug\ControllerAndActions.csprojAssemblyReference.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\obj\Debug\ControllerAndActions.csproj.CoreCompileInputs.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\obj\Debug\ControllerAndActions.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerAndActions\obj\Debug\ControllerAndActions.dll

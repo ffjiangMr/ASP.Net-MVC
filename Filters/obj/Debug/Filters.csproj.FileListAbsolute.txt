@@ -84,7 +84,6 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\bin\Microsoft.AI.DependencyColle
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\bin\Microsoft.AI.Web.xml
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.csprojAssemblyReference.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.csproj.CoreCompileInputs.cache
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.dll
