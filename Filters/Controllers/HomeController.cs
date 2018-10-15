@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Filters.Infrastructure;
+
+using System;
 using System.Web.Mvc;
 
 namespace Filters.Controllers
 {
-    [Authorize]
+    [CustomAuth(false)]
     public class HomeController : Controller
     {
 
