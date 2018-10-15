@@ -5,7 +5,7 @@ using System.Web.Mvc;
 
 namespace Filters.Controllers
 {
-    [CustomAuth(false)]
+    [CustomAuth(false, Users = "admin")]
     public class HomeController : Controller
     {
 
