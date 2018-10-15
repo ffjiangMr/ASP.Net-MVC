@@ -88,3 +88,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.csproj.CoreCom
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.pdb
+C:\Users\nihao\source\repos\ASP.Net-MVC\Filters\obj\Debug\Filters.csprojAssemblyReference.cache

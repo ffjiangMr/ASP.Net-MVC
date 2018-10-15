@@ -20,7 +20,7 @@ namespace Filters.Controllers
         {
             if (userName.EndsWith("@google.com") && password == "secret")
             {
-                FormsAuthentication.SetAuthCookie(userName, false);
+                FormsAuthentication.SetAuthCookie(userName, false);                
                 return Redirect(returnUrl ?? Url.Action("Index", "Home"));
             }
             else

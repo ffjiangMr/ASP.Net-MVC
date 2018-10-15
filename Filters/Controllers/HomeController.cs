@@ -5,13 +5,21 @@ using System.Web.Mvc;
 
 namespace Filters.Controllers
 {
-    [CustomAuth(false, Users = "admin")]
+
     public class HomeController : Controller
     {
 
+        [CustomAuth(true)]
         public String Index()
         {
             return "This is the Index action on the home controller";
+        }
+
+        //[GoogleAuth]
+        [CustomAuth(true)]
+        public String List()
+        {            
+            return "This is the List action on the Home controller";
         }
 
     }
