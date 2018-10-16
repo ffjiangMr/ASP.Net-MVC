@@ -38,7 +38,10 @@ namespace Filters.Controllers
             }
         }
 
-        [CustomAction]
+        //[CustomAction]
+        [ProfileAction]
+        [ProfileResult]
+        [ProfileAll]
         public String ActionFilter()
         {
             return "This is the ActionFilter action on the Home controller";
