@@ -19,22 +19,29 @@ namespace Filters.Controllers
         [CustomAuth(true)]
         [HttpGet]
         public String List()
-        {            
+        {
             return "This is the List action on the Home controller";
         }
 
         [HttpGet]
         //[RangeException]
-        [HandleError(ExceptionType = typeof(ArgumentOutOfRangeException),Master = null,View ="RangeError")]
+        [HandleError(ExceptionType = typeof(ArgumentOutOfRangeException), Master = null, View = "RangeError")]
         public String RangeTest(Int32 id)
-        {            
+        {
             if (id > 100)
             {
                 return $"The id value is : {id}";
             }
-            else {
-                throw new ArgumentOutOfRangeException("id",id,"");
+            else
+            {
+                throw new ArgumentOutOfRangeException("id", id, "");
             }
+        }
+
+        [CustomAction]
+        public String ActionFilter()
+        {
+            return "This is the ActionFilter action on the Home controller";
         }
 
     }
