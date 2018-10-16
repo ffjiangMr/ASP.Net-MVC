@@ -68,3 +68,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.csproj.CoreCompile
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.pdb
+C:\Users\nihao\source\repos\ASP.Net-MVC\Razor\obj\Debug\Razor.csprojAssemblyReference.cache
