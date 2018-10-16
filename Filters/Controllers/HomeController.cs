@@ -24,7 +24,8 @@ namespace Filters.Controllers
         }
 
         [HttpGet]
-        [RangeException]
+        //[RangeException]
+        [HandleError(ExceptionType = typeof(ArgumentOutOfRangeException),Master = null,View ="RangeError")]
         public String RangeTest(Int32 id)
         {
             if (id > 100)
