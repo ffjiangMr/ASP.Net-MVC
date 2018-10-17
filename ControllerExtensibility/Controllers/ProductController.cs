@@ -16,6 +16,7 @@ namespace ControllerExtensibility.Controllers
             });
         }
 
+        [Route("Demo")]
         public ViewResult List()
         {
             return View("Result", new Result()

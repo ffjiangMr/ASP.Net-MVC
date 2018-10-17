@@ -2,7 +2,7 @@
 
 namespace UrlAndRoutes.Controllers
 {
-    [RouteArea("Services")]
+    //[RouteArea("Services")]
     public class CustomerController : Controller
     {
         // GET: Customer      
