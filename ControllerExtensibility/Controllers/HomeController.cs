@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using ControllerExtensibility.Infrastructure;
+using ControllerExtensibility.Models;
+using System.Web.Mvc;
 
 namespace ControllerExtensibility.Controllers
 {
@@ -10,13 +12,24 @@ namespace ControllerExtensibility.Controllers
             return View();
         }
 
+        [Local]
+        [ActionName("Index")]
+        public ActionResult LocalIndex()
+        {
+            return View("Result", new Result()
+            {
+                ControllerName = "Home",
+                ActionName = "LocalIndex",
+            });
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-       
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
