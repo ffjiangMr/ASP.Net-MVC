@@ -1,9 +1,11 @@
 ﻿using ControllerExtensibility.Infrastructure;
 using ControllerExtensibility.Models;
 using System.Web.Mvc;
+using System.Web.SessionState;
 
 namespace ControllerExtensibility.Controllers
 {
+    [SessionState(behavior: SessionStateBehavior.Disabled)]
     public class HomeController : Controller
     {
 

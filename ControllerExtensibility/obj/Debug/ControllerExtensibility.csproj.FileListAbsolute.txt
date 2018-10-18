@@ -88,3 +88,4 @@ C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerExtensibility\obj\Debug\Contro
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerExtensibility\obj\Debug\ControllerExtensibility.csproj.CopyComplete
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerExtensibility\obj\Debug\ControllerExtensibility.dll
 C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerExtensibility\obj\Debug\ControllerExtensibility.pdb
+C:\Users\nihao\source\repos\ASP.Net-MVC\ControllerExtensibility\obj\Debug\ControllerExtensibility.csprojAssemblyReference.cache
