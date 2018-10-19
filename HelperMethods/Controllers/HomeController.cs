@@ -10,7 +10,10 @@ namespace HelperMethods.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            ViewBag.Fruits = new String[] { "Apple", "Orange", "Pear" };
+            ViewBag.Cities = new String[] { "New York", "London", "Paris" };
+            String message = "This is an HTML element : <input>";
+            return View((Object)message);
         }
 
         public ActionResult About()
