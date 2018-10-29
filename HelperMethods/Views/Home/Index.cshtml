@@ -3,6 +3,14 @@
     Layout = null;
 }
 
+@helper ListArrayItem(String[] items)
+{
+    foreach (var str in items)
+    {
+        <b>@str</b>
+    }
+}
+
 <!DOCTYPE html>
 
 <html>
@@ -11,17 +19,17 @@
     <title>Index</title>
 </head>
 <body>
-    <div> 
-        Here are the fruits:
-        @foreach (var item in (String[])ViewBag.Fruits)
+    <div>
+        Here are the fruits: @ListArrayItem(ViewBag.Fruits)
+        @*@foreach (var item in (String[])ViewBag.Fruits)
         {
             <b>@item</b>
-        }
-        Here are the cities:
-        @foreach (var item in (String[])ViewBag.Cities)
+        }*@
+        Here are the cities:@ListArrayItem(ViewBag.Fruits)
+        @*@foreach (var item in (String[])ViewBag.Cities)
         {
             <b>@item</b>
-        }
+        }*@
     </div>
     <div>
         Here is the message:
