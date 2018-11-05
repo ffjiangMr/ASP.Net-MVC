@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "CreatePerson";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Html.EnableClientValidation(false);
 }
 
 <h2>CreatePerson</h2>
@@ -15,7 +16,7 @@
     <input name="FirstName" value="@Model.FirstName" />
 </div>
 <div class="dataElem">
-    <label >Last Name</label>
+    <label>Last Name</label>
     <input name="LastName" value="@Model.LastName" />
 </div>
 <div>
