@@ -1,11 +1,21 @@
 ﻿@{
     ViewBag.Title = "GetPeople";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    AjaxOptions ajaxOpts = new AjaxOptions
+    {
+        UpdateTargetId = "tableBody",
+        Url=Url.Action("GetPeopleData"),
+        LoadingElementId = "loading",
+        LoadingElementDuration = 1000,
+    };
 }
-@using HelperMethods.Models;
-@model IEnumerable<Person>
+@using HelperMethods.Models
+@model String
 
 <h2>Get People</h2>
+<div id="loading" class="load" style="display:none">
+   <p>Loading Data....</p>
+</div>
 <table>
     <thead>
         <tr>
@@ -14,22 +24,25 @@
             <th>Role</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach (var person in Model)
-        {
-            <tr>
-                <td>@person.FirstName</td>
-                <td>@person.LastName</td>
-                <td>@person.Role</td>
-            </tr>
-        }
+    <tbody id="tableBody">
+        @*@foreach (var person in Model)
+            {
+                <tr>
+                    <td>@person.FirstName</td>
+                    <td>@person.LastName</td>
+                    <td>@person.Role</td>
+                </tr>
+            }*@
+        @Html.Action("GetPeopleData", new { selectedRole = Model })
     </tbody>
-    @using (Html.BeginForm())
-    {
-        <div>
-            @Html.DropDownList("selectedRole", new SelectList(new[] { "All" }.Concat(Enum.GetNames(typeof(Role)))))
-            <button type="submit">Submit</button>
-        </div>
-    }
 </table>
+@using (Ajax.BeginForm(ajaxOpts))
+{
+    <div>
+        @Html.DropDownList("selectedRole", new SelectList(new[] { "All" }.Concat(Enum.GetNames(typeof(Role)))))
+        <button type="submit">Submit</button>
+    </div>
+}
+
+
 
