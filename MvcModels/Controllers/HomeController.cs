@@ -22,9 +22,15 @@ namespace MvcModels.Controllers
             return View(dataItem);
         }
 
-        public ActionResult DisplaySummary(AddressSummary summary)
+        public ActionResult DisplaySummary([Bind(Prefix = "HomeAddress")] AddressSummary summary)
         {
             return View(summary);
+        }
+
+        public ActionResult Names(String[] names)
+        {
+            names = names ?? new String[0];
+            return View(names);
         }
 
     }
