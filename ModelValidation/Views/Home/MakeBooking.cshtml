@@ -2,16 +2,15 @@
 
 @{
     ViewBag.Title = "MakeBooking";
-    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h4>Book an Appointment</h4>
 
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary()
     <p>Your name: @Html.EditorFor(item => item.ClientName)</p>
     <p>Appointment Date: @Html.EditorFor(item => item.Date)</p>
     <p>@Html.EditorFor(item => item.TermsAccepted) I accept the terms &conditions</p>
     <input type="submit" value="Make Bookind" />
 }
-
