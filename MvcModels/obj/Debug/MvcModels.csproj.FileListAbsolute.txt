@@ -1,5 +1,0 @@
-C:\Code\GitHub\MVC\ASP.Net-MVC\MvcModels\bin\roslyn\csc.exe
-C:\Code\GitHub\MVC\ASP.Net-MVC\MvcModels\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Code\GitHub\MVC\ASP.Net-MVC\MvcModels\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Code\GitHub\MVC\ASP.Net-MVC\MvcModels\bin\roslyn\System.Collections.Immutable.dll
-C:\Code\GitHub\MVC\ASP.Net-MVC\MvcModels\bin\roslyn\System.Reflection.Metadata.dll
