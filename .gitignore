@@ -5,3 +5,5 @@
 /.vs/WebApplication/v15
 /.vs/config
 /WorkingWithRazor/bin
+/ClientFeatures/bin
+/ClientFeatures/obj/Debug
