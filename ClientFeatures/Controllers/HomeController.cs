@@ -20,7 +20,7 @@ namespace ClientFeatures.Controllers
         }
 
         [HttpPost]
-        public JsonResult MakeBooking(Appointment appt)
+        public JsonResult MakeBook(Appointment appt)
         {
             return Json(appt, JsonRequestBehavior.AllowGet);
         }

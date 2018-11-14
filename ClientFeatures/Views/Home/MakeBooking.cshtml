@@ -5,21 +5,24 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     AjaxOptions ajaxOptions = new AjaxOptions()
     {
-        OnSuccess = "processReponse"
+        OnSuccess = "processReponse",
+        Url = Url.Action("MakeBook")
     };
 }
 
 @section Scripts
 {
-    <script>
+    <script type="text/javascript">
         function switchViews() {
             $(".hidden, .visible").toggleClass("hidden visible");
         }
-        function processResponse(appt) {
+        function processReponse(appt) {
             $("#successClientName").text(appt.ClientName);
             switchViews();
         }
-        $(document).ready(function () {
+    </script>
+    <script type="text/javascript">
+        $(function () {
             $("#backButton").click(function (e) {
                 switchViews();
             });
