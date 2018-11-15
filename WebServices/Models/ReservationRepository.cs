@@ -5,11 +5,11 @@ using System.Web;
 
 namespace WebServices.Models
 {
-    public class ReservationReponsitory
+    public class ReservationRepository
     {
-        private static ReservationReponsitory repo = new ReservationReponsitory();
+        private static ReservationRepository repo = new ReservationRepository();
 
-        public static ReservationReponsitory Current
+        public static ReservationRepository Current
         {
             get { return repo; }
         }
